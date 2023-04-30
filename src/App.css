@@ -154,16 +154,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1C1731;
+  background: #1c1731;
   border-radius: 10px;
   height: 60px;
   cursor: pointer;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   transform: rotate(0.63deg);
   padding: 0 25px;
 }
@@ -209,4 +209,35 @@
 .modal_coin {
   padding: 10px 0;
   cursor: pointer;
+}
+/* responsive */
+.navbar_menu {
+  display: none;
+}
+
+@media screen and (max-width: 786px) {
+  .navbar_menu {
+    display: block;
+    margin-right: 24px;
+  }
+  .navRes {
+    display: none;
+  }
+  .navbar_main {
+    justify-content: flex-start;
+  }
+  .navbar_drawer {
+    height: 100%;
+    width: 100%;
+    background: #21213e;
+    padding: 40px;
+    position: relative;
+  }
+  .navbar_links{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navBtn_wallet{
+    margin-top: 40px;
+  }
 }
